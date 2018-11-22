@@ -1,0 +1,19 @@
+<h2>{{listTitle | uppercase }}</h2>
+<div class="views-container">
+  <div *ngFor="let view of views" class="view">
+    <div class="view-left">
+      <i class="view-icon">icon</i>
+      <div class="view-digit">{{view.digit}}</div>
+    </div>
+    <div class="view-middle">
+      <div class="">
+        <div class="view-type">{{view.type}}</div>
+        <div class="view-name">{{view.name}}</div>
+      </div>
+      <div class="view-date">{{view.date}} - {{view.time}}</div>
+    </div>
+    <div class="view-options">
+      <span>op</span>
+    </div>
+  </div>
+</div>
