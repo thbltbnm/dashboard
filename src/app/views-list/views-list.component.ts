@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { View } from '../view';
-import { VIEWS } from '../mock-views';
+import { Component, OnInit, Input } from '@angular/core';
+import { ListToDisplay } from '../listToDisplay';
 
 @Component({
   selector: 'app-views-list',
@@ -8,9 +7,7 @@ import { VIEWS } from '../mock-views';
   styleUrls: ['./views-list.component.scss']
 })
 export class ViewsListComponent implements OnInit {
-
-  listTitle = 'favorite views'; //ça va pas rester
-  views = VIEWS; //à remplacer par un service
+  @Input() listToDisplay: ListToDisplay;
 
   constructor() { }
 
