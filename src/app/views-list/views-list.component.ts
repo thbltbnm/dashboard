@@ -10,7 +10,7 @@ import { VIEWS } from '../mock-views';
 export class ViewsListComponent implements OnInit {
 
   listTitle = 'favorite views'; //ça va pas rester
-  views = VIEWS;
+  views = VIEWS; //à remplacer par un service
 
   constructor() { }
 

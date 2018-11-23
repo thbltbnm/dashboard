@@ -1,0 +1,31 @@
+.view {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  min-width: 15rem;
+  margin: 0.3rem 0.3rem 0 0;
+  padding: 0.5rem;
+  color: white;
+  background-color: #514AD3;
+  font-size: 12px;
+}
+
+.view > div:not(:last-child) {
+  margin-right: 0.3rem;
+}
+
+.view-left,
+.view-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .view-digit {
+    font-size: 30px;
+  }
+
+  .view-name {
+    max-width: 10rem;
+    font-size: 20px;
+  }
+}
