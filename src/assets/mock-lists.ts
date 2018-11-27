@@ -1,4 +1,4 @@
-import { ListToDisplay } from './listToDisplay';
+import { ListToDisplay } from '../app/listToDisplay';
 
 export const LISTTODISPLAY1: ListToDisplay = {
   title: 'buisness profile favorite views',

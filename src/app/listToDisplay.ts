@@ -1,6 +1,6 @@
-import { View } from './view';
+import { View } from './models/view.model';
 
-export class ListToDisplay {
+export interface ListToDisplay {
   title: string;
   views: View[];
 }

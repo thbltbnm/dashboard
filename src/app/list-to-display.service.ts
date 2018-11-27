@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+
 import { ListToDisplay } from './listToDisplay';
-import { LISTTODISPLAY1, LISTTODISPLAY2 } from './mock-lists';
+import { LISTTODISPLAY1, LISTTODISPLAY2 } from '../assets/mock-lists';
 
 
 @Injectable({

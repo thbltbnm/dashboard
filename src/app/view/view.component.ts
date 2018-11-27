@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { View } from '../view';
+
+import { View } from '../models/view.model';
 
 @Component({
   selector: 'app-view',

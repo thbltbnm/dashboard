@@ -1,4 +1,4 @@
-export class View {
+export interface View {
   //icon: ;
   digit: number;
   type: string;

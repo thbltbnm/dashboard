@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ListToDisplay } from './listToDisplay';
 import { ListToDisplayService } from './list-to-display.service';
 
