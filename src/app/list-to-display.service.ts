@@ -14,3 +14,4 @@ export class ListToDisplayService {
   getListsToDisplay(): Observable<ListToDisplay[]> {
     return this.http.get<ListToDisplay[]>(`assets/data/lists.json`)
   }
+}
