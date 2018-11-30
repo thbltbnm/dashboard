@@ -1,4 +1,4 @@
 <h2>{{listToDisplay.title | uppercase }}</h2>
 <div class="views-container">
-  <app-view *ngFor="let view of listToDisplay.views" [view]="view"></app-view>
+  <app-view *ngFor="let view of listToDisplay.views" [view]="view" (click)=onViewClick(view.name)></app-view>
 </div>

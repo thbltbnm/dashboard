@@ -22,4 +22,8 @@ export class AppComponent {
     this.listToDisplayService.getListsToDisplay()
       .subscribe(lists => this.lists = lists);
   }
+
+  logViewName(value: string) {
+    console.log('Le nom de la vue est :', value);
+  }
 }

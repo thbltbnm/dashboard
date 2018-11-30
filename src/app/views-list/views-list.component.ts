@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 import { ListToDisplay } from '../listToDisplay';
 
@@ -9,10 +9,14 @@ import { ListToDisplay } from '../listToDisplay';
 })
 export class ViewsListComponent implements OnInit {
   @Input() listToDisplay: ListToDisplay;
+  @Output() mockOutput: EventEmitter<string> = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  onViewClick(value: string) {
+    this.mockOutput.emit(value);
+  }
 }
